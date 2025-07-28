@@ -1,0 +1,96 @@
+# CodeRabbit Configuration
+# This file configures CodeRabbit for the Askro WordPress Plugin
+
+# Repository settings
+repository:
+  name: "askro-plugin"
+  type: "wordpress-plugin"
+  language: "php"
+
+# Review settings
+review:
+  # Enable automatic reviews
+  auto_review: true
+  
+  # Review all files
+  include_patterns:
+    - "**/*.php"
+    - "**/*.js"
+    - "**/*.css"
+    - "**/*.json"
+    - "**/*.yaml"
+    - "**/*.yml"
+  
+  # Exclude patterns
+  exclude_patterns:
+    - "node_modules/**"
+    - "vendor/**"
+    - "tests/**"
+    - "backups/**"
+    - "*.log"
+    - "*.min.js"
+    - "*.min.css"
+
+# Security settings
+security:
+  # Enable security scanning
+  enabled: true
+  
+  # Security checks
+  checks:
+    - "sql_injection"
+    - "xss_vulnerabilities"
+    - "csrf_protection"
+    - "input_validation"
+    - "authentication"
+    - "authorization"
+
+# Performance settings
+performance:
+  # Enable performance analysis
+  enabled: true
+  
+  # Performance checks
+  checks:
+    - "database_queries"
+    - "asset_optimization"
+    - "caching_strategy"
+    - "memory_usage"
+
+# Code quality settings
+quality:
+  # Enable code quality analysis
+  enabled: true
+  
+  # Quality checks
+  checks:
+    - "code_complexity"
+    - "method_length"
+    - "naming_conventions"
+    - "documentation"
+    - "error_handling"
+    - "test_coverage"
+
+# WordPress specific settings
+wordpress:
+  # WordPress coding standards
+  coding_standards: true
+  
+  # Plugin specific checks
+  plugin_checks:
+    - "security_best_practices"
+    - "performance_optimization"
+    - "database_optimization"
+    - "api_design"
+    - "user_experience"
+
+# Custom prompts for this project
+prompts:
+  - "Review this WordPress plugin for security vulnerabilities, especially SQL injection and XSS attacks"
+  - "Check for proper input validation and sanitization"
+  - "Analyze database query performance and suggest optimizations"
+  - "Review the API design and suggest improvements"
+  - "Check for proper error handling and user feedback"
+  - "Analyze the code structure and suggest refactoring opportunities"
+  - "Review the frontend JavaScript for security and performance"
+  - "Check for proper WordPress coding standards compliance" 

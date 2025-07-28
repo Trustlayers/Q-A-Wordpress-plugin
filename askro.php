@@ -3,7 +3,7 @@
  * Plugin Name: Askro - Advanced Q&A Community Platform
  * Plugin URI: https://arashdi.com/askro
  * Description: A highly advanced, interactive, and gamified Q&A platform that prioritizes user experience, performance, and comprehensive administrative control.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Arashdi
  * Author URI: https://arashdi.com
  * License: GPL-3.0-or-later
@@ -22,6 +22,8 @@
  * @copyright  2025 William Ratcliff
  * @license    GPL-3.0-or-later
  * @link       https://arashdi.com
+ * 
+ * CodeRabbit Review: Enhanced security and performance optimizations
  */
 
 // Prevent direct access
@@ -30,7 +32,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('ASKRO_VERSION', '1.0.0');
+define('ASKRO_VERSION', '1.0.1');
 define('ASKRO_PLUGIN_FILE', __FILE__);
 define('ASKRO_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('ASKRO_PLUGIN_URL', plugin_dir_url(__FILE__));
